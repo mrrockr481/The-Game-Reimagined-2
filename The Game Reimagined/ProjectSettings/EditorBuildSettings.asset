@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Playground.unity
     guid: e9017d5f96b9f09489b4b37e1d6eb914
   - enabled: 1
-    path: Assets/Scenes/Main Game.unity
+    path: Assets/Scenes/Basment.unity
     guid: e0c61d6f9f107474dadf8e4182356a0f
   - enabled: 1
     path: Assets/Scenes/Robber House.unity

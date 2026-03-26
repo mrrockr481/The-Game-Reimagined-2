@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 14040328}
   - component: {fileID: 14040327}
   - component: {fileID: 14040326}
+  - component: {fileID: 14040329}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -198,7 +199,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14040324}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -253,6 +254,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14040324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &14040329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14040324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345933098315ade4ab0fec0b7e0c6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Basement
 --- !u!1 &20462709
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +4970,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectEnable: {fileID: 1639001133}
+--- !u!1 &350645955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350645958}
+  - component: {fileID: 350645957}
+  - component: {fileID: 350645956}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &350645956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350645955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345933098315ade4ab0fec0b7e0c6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Basment
+--- !u!65 &350645957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350645955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.3262178}
+  m_Center: {x: 0, y: 0, z: -0.16310924}
+--- !u!4 &350645958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350645955}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.5758057, z: 178.46}
+  m_LocalScale: {x: 10, y: 10, z: 0.7717505}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351755923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6565,7 +6638,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452501860
 GameObject:
@@ -12886,6 +12959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345933098315ade4ab0fec0b7e0c6c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneName: Robber House
 --- !u!65 &820422484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23961,7 +24035,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442299237
 GameObject:
@@ -26895,7 +26969,7 @@ Transform:
   - {fileID: 47147004}
   - {fileID: 1052627533}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639555133
 GameObject:
@@ -31436,7 +31510,7 @@ Transform:
   - {fileID: 2001766870}
   - {fileID: 14040325}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &1815626139
 GameObject:

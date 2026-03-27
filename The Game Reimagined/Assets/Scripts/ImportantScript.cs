@@ -8,7 +8,10 @@ public class ImportantScript : MonoBehaviour
     public GameObject door1anim;
     public GameObject door2;
     public GameObject door2anim;
+    public GameObject door3;
+    public GameObject door3anim;
     public bool puzzleOne = false;
+    public bool puzzleTwo = false;
 
     void Update()
     {
@@ -40,6 +43,15 @@ public class ImportantScript : MonoBehaviour
                 {
                     door2.SetActive(false);
                     door2anim.SetActive(true);
+                    puzzleTwo = true;
+                }
+            }
+            if (inputField.text == "23")
+            {
+                if (puzzleTwo)
+                {
+                    door3.SetActive(false);
+                    door3anim.SetActive(true);
                 }
             }
             inputField.text = ""; // clear after submit

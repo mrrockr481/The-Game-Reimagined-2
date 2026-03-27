@@ -6,6 +6,9 @@ public class ImportantScript : MonoBehaviour
     public TMP_InputField inputField; // drag your TMP_InputField here
     public GameObject door1;
     public GameObject door1anim;
+    public GameObject door2;
+    public GameObject door2anim;
+    public bool puzzleOne = false;
 
     void Update()
     {
@@ -29,6 +32,15 @@ public class ImportantScript : MonoBehaviour
             {
                 door1.SetActive(false);
                 door1anim.SetActive(true);
+                puzzleOne = true;
+            }
+            if (inputField.text == "33")
+            {
+                if (puzzleOne)
+                {
+                    door2.SetActive(false);
+                    door2anim.SetActive(true);
+                }
             }
             inputField.text = ""; // clear after submit
         }
